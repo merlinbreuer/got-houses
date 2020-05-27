@@ -1,0 +1,27 @@
+.home {
+  &__description {
+    font-size: 2rem;
+    max-width: 680px;
+  }
+
+  &__hint {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  &__tile {
+    width: 100%;
+    flex-basis: 100%;
+
+    @media screen and (min-width:720px) {
+      flex-basis: 45%;
+    }
+
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

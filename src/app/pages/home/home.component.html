@@ -1,0 +1,19 @@
+<section class="home__content">
+  <p class="home__description">
+    This website provides a short overview of all houses in Game of Thrones with some additonal information.
+  </p>
+  <div class="home__tile-container"
+       infiniteScroll
+       [infiniteScrollDistance]="1"
+       [infiniteScrollThrottle]="0"
+       (scrolled)="onScroll()">
+    <app-tile *ngFor="let house of houses"
+              class="home__tile"
+              [data]="house">
+    </app-tile>
+  </div>
+  <div class="home__hint">
+    <p *ngIf="hasError">Sorry, an error occurred, please try later again.</p>
+    <p  *ngIf="!!loading">Loading...</p>
+  </div>
+</section>

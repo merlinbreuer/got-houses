@@ -1,0 +1,18 @@
+.tile {
+  background-color: #00818a;
+  color: #dbedf3;
+  text-decoration: none;
+  min-height: 150px;
+  display: block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &__headline {
+    text-align: center;
+    line-height: 2rem;
+    padding-top: 3.5rem;
+  }
+}

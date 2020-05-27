@@ -1,0 +1,26 @@
+<section>
+  <a [routerLink]="''" class="details__link">&lt; Back to Home</a>
+
+  <div class="details__hint">
+    <p *ngIf="hasError">Sorry, an error occurred, please go back to homepage or try later again.</p>
+    <p *ngIf="!!loading">Loading...</p>
+  </div>
+
+  <h2 [innerHtml]="house?.name" class="details__headline"></h2>
+  <p *ngIf="!!house?.coatOfArms">
+    <span class="details__info">Coat of arms: </span>
+    <span [innerHtml]="house.coatOfArms"></span>
+  </p>
+  <p *ngIf="!!house?.words">
+    <span class="details__info">Words: </span>
+    <span [innerHtml]="house.words"></span>
+  </p>
+  <p *ngIf="!!house?.region">
+    <span class="details__info">Region: </span>
+    <span [innerHtml]="house.region"></span>
+  </p>
+  <p *ngIf="!!house?.founded">
+    <span class="details__info">Founded: </span>
+    <span [innerHtml]="house.founded"></span>
+  </p>
+</section>

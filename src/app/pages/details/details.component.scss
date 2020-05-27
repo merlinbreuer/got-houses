@@ -1,0 +1,28 @@
+.details {
+  &__link {
+    color: #dbedf3;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &__hint {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  &__headline {
+    font-size: 2rem;
+
+    @media screen and (min-width:720px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__info {
+    font-weight: bold;
+  }
+}

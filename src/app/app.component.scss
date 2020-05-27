@@ -1,0 +1,20 @@
+.app {
+
+  &__wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 0;
+  }
+
+  &__headline {
+    font-size: 3rem;
+
+    @media screen and (min-width:720px) {
+      font-size: 6rem;
+    }
+
+    &--highlighted {
+      color: #00818a;
+    }
+  }
+}
